@@ -98,11 +98,10 @@ export function renderMap(el, config = {}) {
     preset.zoom ??
     2;
 
-  const isDark = document.documentElement.dataset.theme === 'dark';
   const style =
     el.dataset.style ??
     config.style ??
-    (isDark ? 'mapbox://styles/mapbox/dark-v11' : 'mapbox://styles/mapbox/light-v11');
+    'mapbox://styles/mapbox/outdoors-v12';
 
   let map;
   try {

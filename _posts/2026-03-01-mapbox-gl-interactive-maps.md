@@ -53,9 +53,9 @@ Note the Mapbox convention: **longitude first**, then latitude. This is the reve
 
 ---
 
-## Dark mode
+## Style overrides
 
-The adapter auto-selects `mapbox://styles/mapbox/dark-v11` or `light-v11` based on `document.documentElement.dataset.theme`. Toggle dark mode in the header — the next map you load will match. Override explicitly with `data-style`:
+The default style is `outdoors-v12` — terrain shading, land cover, contours, and waterways. It works at any zoom level and in any page context. Override with `data-style` when you need something different:
 
 ```html
 <div data-map="calgary" data-style="mapbox://styles/mapbox/satellite-streets-v12"
@@ -71,7 +71,7 @@ The scrollytelling pattern is identical to Leaflet — a `.story-section` contai
 <section class="story-section">
   <div class="story-sticky">
     <div class="story-graphic">
-      <div data-map="world" id="bc-map" style="height:100%;"
+      <div data-map="world" id="bc-map"
            data-center="-126.0,54.0" data-zoom="5"></div>
     </div>
   </div>
@@ -137,18 +137,16 @@ To keep the token out of source control entirely, remove it from `_config.yml` a
 Any valid Mapbox style URL works in `data-style`:
 
 ```html
-<!-- Satellite -->
+<!-- Satellite imagery -->
 <div data-map="vancouver" style="height:400px;"
      data-style="mapbox://styles/mapbox/satellite-streets-v12"></div>
 
-<!-- Navigation -->
+<!-- Streets — higher label density, better for urban content -->
 <div data-map="calgary" style="height:400px;"
-     data-style="mapbox://styles/mapbox/navigation-day-v1"></div>
+     data-style="mapbox://styles/mapbox/streets-v12"></div>
 
-<!-- Custom studio style -->
+<!-- Custom Mapbox Studio style -->
 <div data-map="custom" style="height:400px;"
      data-center="-114.07,51.04" data-zoom="10"
      data-style="mapbox://styles/your-username/your-style-id"></div>
 ```
-
-When `data-style` is set, the dark/light auto-switch is bypassed.

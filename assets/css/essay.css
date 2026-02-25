@@ -455,6 +455,7 @@
 /* Viz widgets inside the graphic fill available space */
 .story-graphic [data-viz],
 .story-graphic [data-leaflet],
+.story-graphic [data-map],
 .story-graphic [data-d3],
 .story-graphic .ricker-widget {
   width: 100%;
@@ -749,6 +750,7 @@
   .story-steps,           /* scrollytelling controls aren't useful in print */
   [data-viz],
   [data-leaflet],
+  [data-map],
   [data-d3] {
     display: none !important;
   }
