@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "search": "npx pagefind --site _site"
+    "search": "npx pagefind --site _site",
+    "new": "bash scripts/new-draft.sh",
+    "preview": "bundle exec jekyll serve --drafts",
+    "publish": "bash scripts/publish.sh"
   },
   "dependencies": {
     "alpinejs": "^3.14.8"
