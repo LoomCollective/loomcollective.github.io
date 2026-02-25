@@ -59,3 +59,5 @@ The next posts in this series walk through each part of the visualisation system
 - **Scrollytelling** — Leaflet maps with flyTo transitions; D3 bar charts animating through data states driven by scroll position
 
 Each post is also a test of the system it describes — if the chart renders, the pipeline works.
+
+There is also a [sample presentation](/sample-presentation/) built with the `presentation` layout — a Reveal.js full-screen slideshow that shares Loom's typography and dark mode without loading the site's normal header or footer.
