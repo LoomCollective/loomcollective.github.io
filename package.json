@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "search": "npx pagefind --site _site"
   },
   "dependencies": {
     "alpinejs": "^3.14.8"

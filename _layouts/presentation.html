@@ -35,8 +35,9 @@
     <div class="slides" id="slides-container"></div>
   </div>
 
-  <!-- Jekyll-rendered content; split into slides by JS below -->
-  <div id="slides-raw" hidden>{{ content }}</div>
+  <!-- Jekyll-rendered content; split into slides by JS below.
+       Not display:none or hidden — Pagefind needs to crawl this text. -->
+  <div id="slides-raw" data-pagefind-body style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">{{ content }}</div>
 
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js" crossorigin></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js" crossorigin></script>
