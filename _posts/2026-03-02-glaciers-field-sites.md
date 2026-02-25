@@ -8,6 +8,8 @@ categories: [science]
 tags: [glaciology, mapbox, terrain, scrollytelling, alps, rockies, fieldwork]
 geo: true
 story: true
+image: /assets/images/matterhorn.jpg   # Optional — feature image at top of post
+image_alt: "The Matterhorn viewed from Findelen Glacier"
 ---
 
 These are places I have walked on, drilled into, and watched retreat. Findelen and Gornergletscher above Zermatt. Mer de Glace above Chamonix. Peyto Glacier and the Columbia Icefield in the Canadian Rockies. Each one is a different chapter of the same story: the post-industrial drawdown of ice that had been accumulating since the Little Ice Age maximum of roughly 1850.
