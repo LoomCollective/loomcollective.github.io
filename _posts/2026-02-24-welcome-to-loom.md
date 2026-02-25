@@ -11,11 +11,11 @@ series: "Building Loom"
 series_order: 1
 ---
 
-Loom is a Jekyll site built for technical writing that earns its complexity. Clean typography by default, with a progressive visualisation layer that loads only what a page needs.
+Loom is a Jekyll theme built for technical writing beyond the basics. It provides clean typography by default, with a progressive visualisation layer that loads only what a page needs. This originally started out as a Ghost Theme but in a moment born of frustration, moved back to a tried-and-true deployment method. What's old is new again.
 
 ## Design principles
 
-Three ideas shaped every decision:
+Three ideas shaped every decision in the initial build:
 
 **No JavaScript tax on simple posts.** A post with only prose and code blocks loads no charting libraries, no mapping SDKs, no math renderers. The runtime detects what each page uses and loads accordingly.
 
