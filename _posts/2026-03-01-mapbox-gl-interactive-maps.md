@@ -8,6 +8,7 @@ categories: [meta]
 tags: [mapbox, maps, scrollytelling, how-to, geo]
 geo: true
 story: true
+featured: true
 series: "Building Loom"
 series_order: 5
 ---
