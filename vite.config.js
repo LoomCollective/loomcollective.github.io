@@ -9,6 +9,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'src/main.js'),
       },
+      external: ['/pagefind/pagefind.js'],
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
