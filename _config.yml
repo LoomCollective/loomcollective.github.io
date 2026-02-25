@@ -1,6 +1,7 @@
 title: LoomCollective
 description: Clean typography, dark mode, computational essays.
-url: "https://loomcollective.ai"
+# url: "https://loomcollective.ai"
+# url: "https://loomcollective.github.io"
 baseurl: ""
 author: Paul Hobson
 lang: en
