@@ -1,10 +1,9 @@
 title: Loom
 description: Clean typography, dark mode, computational essays.
 logo: /assets/images/loom_collective.jpg
-# url: "https://loomcollective.ai"
-url: "https://loomcollective.github.io"
+url: ""
 baseurl: ""
-author: paul-hobson
+author: ""
 lang: en
 
 # Brand — controls which assets/css/brand-{name}.css is loaded.
@@ -23,6 +22,7 @@ layouts_dir:  theme/_layouts
 includes_dir: theme/_includes
 plugins_dir:  theme/_plugins
 
+>>>>>>> main
 permalink: /:title/
 future: true
 
@@ -33,15 +33,25 @@ facebook: ""
 # Analytics — Cloudflare Web Analytics token
 analytics_token: ""
 
+<<<<<<< HEAD
+# Mapbox GL JS — paste your public token (pk.eyJ...) here.
+# Keep secret tokens in GitHub Actions secrets instead (see HOWTO.md §17).
+mapbox_token: ""
+=======
 # Mapbox GL JS — public token (pk.eyJ...)
 mapbox_token: "pk.eyJ1IjoiYnJlYWRlZGNvZCIsImEiOiJjbW0xa25qc2EwMmtwMnJwejJlNndqdnoxIn0._7I9PwXuFLrOQINVZ84y1w"
+>>>>>>> main
 
 # Giscus comments
 giscus:
-  repo: "LoomCollective/loomcollective.github.io"
-  repo_id: "R_kgDORYNKVA"
+  repo: ""
+  repo_id: ""
   category: "Announcements"
+<<<<<<< HEAD
+  category_id: ""
+=======
   category_id: "DIC_kwDORYNKVM4C3J-l"
+>>>>>>> main
 
 collections:
   pages:
@@ -108,7 +118,18 @@ secondary_navigation:
     url: /feed.xml
 
 exclude:
+<<<<<<< HEAD
+  - starter/
+  - src/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - vite.config.js
+  - tailwind.config.js
+  - postcss.config.js
+=======
   - theme/         # submodule — layouts/includes/plugins still loaded via *_dir config
+>>>>>>> main
   - Gemfile
   - Gemfile.lock
   - .github/
