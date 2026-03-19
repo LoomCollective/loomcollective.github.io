@@ -1,16 +1,28 @@
 title: Loom
-description: Jekyll theme. Clean typography, dark mode, computational essays.
+description: Clean typography, dark mode, computational essays.
 logo: /assets/images/loom_collective.jpg
 url: ""
 baseurl: ""
 author: ""
 lang: en
 
-# Brand tokens — per-site CSS var overrides loaded after main.css
-# Leave empty for the default Loom palette.
-tokens_css: ""
+# Brand — controls which assets/css/brand-{name}.css is loaded.
+brand: loom
+brand_name: "Loom Collective"
+brand_default_theme: "dark"
+
+# fonts_url — override the Google Fonts URL for brand-specific typefaces.
 fonts_url: ""
 
+# tokens_css — optional extra CSS after the brand file for site-specific tweaks.
+tokens_css: ""
+
+# Theme submodule paths (theme/ is git submodule pointing at subhaus95/template-main)
+layouts_dir:  theme/_layouts
+includes_dir: theme/_includes
+plugins_dir:  theme/_plugins
+
+>>>>>>> main
 permalink: /:title/
 future: true
 
@@ -18,21 +30,28 @@ future: true
 twitter: ""
 facebook: ""
 
-# Analytics — paste your Cloudflare Web Analytics token here (Settings → Web Analytics → your site)
-# Leave empty to disable. To swap providers later, replace this block with your new snippet.
+# Analytics — Cloudflare Web Analytics token
 analytics_token: ""
 
+<<<<<<< HEAD
 # Mapbox GL JS — paste your public token (pk.eyJ...) here.
 # Keep secret tokens in GitHub Actions secrets instead (see HOWTO.md §17).
 mapbox_token: ""
+=======
+# Mapbox GL JS — public token (pk.eyJ...)
+mapbox_token: "pk.eyJ1IjoiYnJlYWRlZGNvZCIsImEiOiJjbW0xa25qc2EwMmtwMnJwejJlNndqdnoxIn0._7I9PwXuFLrOQINVZ84y1w"
+>>>>>>> main
 
-# Giscus comments — get values from https://giscus.app after enabling GitHub Discussions on the repo
-# Add `comments: true` to any post's front matter to show the comment widget.
+# Giscus comments
 giscus:
   repo: ""
   repo_id: ""
   category: "Announcements"
+<<<<<<< HEAD
   category_id: ""
+=======
+  category_id: "DIC_kwDORYNKVM4C3J-l"
+>>>>>>> main
 
 collections:
   pages:
@@ -44,7 +63,7 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      image: /assets/images/og-default.png
+      image: /assets/images/og-default.webp
   - scope:
       path: "_pages"
     values:
@@ -83,16 +102,23 @@ navigation:
     url: /
   - title: Topics
     url: /topics/
+  - title: Collections
+    url: /collections/
+  - title: Start Here
+    url: /start-here/
   - title: Archive
     url: /archive/
 
 secondary_navigation:
   - title: About
     url: /about/
+  - title: Contact
+    url: /contact/
   - title: RSS
     url: /feed.xml
 
 exclude:
+<<<<<<< HEAD
   - starter/
   - src/
   - node_modules/
@@ -101,6 +127,9 @@ exclude:
   - vite.config.js
   - tailwind.config.js
   - postcss.config.js
+=======
+  - theme/         # submodule — layouts/includes/plugins still loaded via *_dir config
+>>>>>>> main
   - Gemfile
   - Gemfile.lock
   - .github/
